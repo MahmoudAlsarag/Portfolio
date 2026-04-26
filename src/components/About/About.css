@@ -1,0 +1,106 @@
+.about_container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+.about_me{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg , transparent , var(--color-primary) , transparent);
+}
+.about_me_image{
+    transform: rotate(10deg);
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.about_me_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about_me_image:hover{
+    transform: rotate(0deg);
+}
+.about_cards {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1.5rem;
+}
+.about_cards .about_card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.about_cards .about_card:hover{
+    background: transparent;
+    border-color: var(--color-bg-variant);
+}
+.about_icon{
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about_card h5{
+    font-size: 0.9rem;
+}
+.about_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+.about_container p{
+        margin: 2rem 0 2.6rem;
+        color: var(--color-light);
+}
+
+/* Resoponsive */
+
+@media screen and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    font-size: 25px;
+  }
+
+  .about_me {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .about_cards {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .about_content {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .about_me {
+    width: 70%;
+  }
+
+  .about_cards {
+    grid-template-columns: 1fr; 
+  }
+
+  .about_card {
+    padding: 1.5rem;
+  }
+
+  .about_container p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .about_me_image {
+    transform: rotate(0deg);
+  }
+
+}
