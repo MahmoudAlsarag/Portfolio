@@ -3,6 +3,7 @@ import "./Footer.css"
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin  } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -21,6 +22,8 @@ function Footer() {
         <a href={`https://www.facebook.com/share/14ddLFK2Tqj/`} target='_blank'><FaFacebookF/></a>
         <a href={`https://www.instagram.com/melsarag12?igsh=MWhuMnMzNTNiYWMxbg==`} target='_blank'><FaInstagram/></a>
         <a href={`http://linkedin.com/in/mahmoud-saeed12`} target='_blank'><FaLinkedin /></a>
+        <a href={`https://github.com/MahmoudAlsarag`} target='_blank'><FaGithub /></a>
+
       </div>
       <div className="footer_copyright">
         <small>&copy; <a href="">Mahmoud Alsarag</a> All Rights Reserved</small>
