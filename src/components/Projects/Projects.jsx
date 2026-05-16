@@ -32,16 +32,16 @@ const portfolioData = [
   {
     id: 4,
     image: IMG4,
-    title: "Wiki Search App",
-    github: "https://github.com/MahmoudAlsarag/wikipedia",
-    demo: "https://mahmoudalsarag.github.io/wikipedia/",
+    title: "Prayer_Times_App",
+    github: "https://github.com/MahmoudAlsarag/Prayer_Times",
+    demo: "https://prayer-times-omega-lovat.vercel.app/",
   },
   {
     id: 5,
     image: IMG5,
     title: "Modern UI Layout",
     github: "https://github.com/MahmoudAlsarag/HTML_CSS_Template_One",
-    demo: "https://demo5.com",
+    demo: "https://mahmoudalsarag.github.io/HTML_CSS_Template_One/",
   },
   {
     id: 6,
